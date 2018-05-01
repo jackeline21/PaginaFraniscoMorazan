@@ -1,0 +1,151 @@
+<html lang="Francisco Morazán">
+<head>
+	<script>
+		
+		function Carga()
+		{
+			segundos =0;
+			minutos = 0;
+			m=document.getElementById("min");
+			s=document.getElementById("seg");
+
+			window.setInterval(
+				function(){
+					if (segundos==60) {
+						segundos=0;
+						minutos++;
+						m.innerHTML = minutos;
+						if (minutos== 60) {
+							minutos=0;
+						}
+					}
+					s.innerHTML=segundos;
+					segundos++;
+				},1000);
+		}
+	</script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>Francisco Morazán</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/jquery-3.2.1.min.js">
+	<link rel="stylesheet" type="text/css" href="jquery.expander.min.js">
+	<link rel="shortcut icon" type="img/x-icon" href="img/logoTwins.png">
+	<script src="js/wow.min.js"></script>
+</head>
+<body onload="Carga()">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
+		<div class="container">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand mx-auto wow animated jackInTheBox" href="#">Francisco<span>Morazan</span> <span id ="min">0</span><span>:</span><span id ="seg">0</span></a>
+	  <div class="collapse navbar-collapse" id="navbarCollapse1">
+		<ul class="navbar-nav ml-auto">
+		 <li class="nav-item active"> <a class="nav-link colorVerde transicion" href="#myCarousel">Biografía <span class="sr-only">(current)</span></a> </li>
+		</ul>
+	  </div>
+			</div>
+	</nav>
+
+	<!-- Swiper Silder
+		================================================== --> 
+	<!-- Slider main container -->
+	<div class="swiper-container main-slider" id="myCarousel">
+	  <div class="swiper-wrapper">
+		<div class="swiper-slide slider-bg-position wow animated fadeIn" data-wow-duration="5s" style="background:url('img/fondito.jpg')">
+		  <h2 class=" wow animated infinite pulse yawey" data-wow-duration="3s" style="color: red">"Declaro que mi amor a Centroamérica muere conmigo" </h2>
+		</div>
+	  </div>
+	  <!-- Add Pagination -->
+	  <div class="swiper-pagination"></div>
+	  <!-- Add Navigation -->
+	</div>
+
+		<div class="title-arch wpw animated fadeInDown" data-wow-duration="3s"> General Francisco Morazan<p class="wow animated fadeInDown" data-wow-duration="3s">José Francisco Morazán Quezada (Tegucigalpa, 3 de octubre de 1792 – San José de Costa Rica, 15 de septiembre de 1842)</p></div>
+
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 zoomIn" data-wow-delay="600ms" data-wow-duration="1s" style="background:url('img/FMorazan.jpg') no-repeat center;">
+			<div class="project-hover">
+				<h2>Primeros años y su educación</h2>
+				
+				<hr />
+				<p>José Francisco Morazán Quezada nació el 3 de octubre de 1792 en Tegucigalpa, entonces parte de la Intendencia de Comayagua,Sus padres fueron José Eusebio Morazán Alemán y Guadalupe Quezada Borjas, ambos miembros de una familia criolla de clase alta dedicada al comercio y la agricultura.</p>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 zoomIn" data-wow-delay="1200ms" data-wow-duration="1s" style="background:url('img/Gral-Francisco-Morazan.jpg') no-repeat center;">
+			<div class="project-hover">
+				<h2>Estudios</h2>
+				<hr />
+				<p> El Sr. Eusebio puso a su hijo bajo la tutoría de León Vásquez, quien le enseñó derecho civil, proceso penal y notariado. Al mismo tiempo, tuvo la oportunidad de aprender a leer francés en la biblioteca de su tío político, Dionisio de Herrera, lo cual le permitió familiarizarse con obras como la Revolución francesa. Esta dedicación y espíritu de superación, llevó de vez en cuando a Morazán a destacar representando los intereses de algunas personas ante el tribunal colonial.</p>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 zoomIn" data-wow-delay="1800ms" data-wow-duration="1s" style="background:url('img/fm.jpg') no-repeat center;">
+			<div class="project-hover">
+				<h2>Inicios de su carrera política </h2>
+				<hr />
+				<p>Trabajó en el ayuntamiento de Tegucigalpa, donde se desempeñaba como secretario del alcalde Narciso Mallol y como defensor de oficio en casos judiciales en materia civil y criminal,</p>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-4 wow animated zoomIn" data-wow-delay="2400ms" data-wow-duration="1s" style="background:url('img/fmq.jpg ') no-repeat center;">
+			<div class="project-hover">
+				<h2>Inicios de su carrera militar</h2>
+				<hr />
+				<p>En Comayagua,José Tinoco de Contreras estaba a favor de la anexión; pero Tegucigalpa,se opuso.Esto provocó que Tinoco tomara acciones represivas contra Tegucigalpa. Asi que se organizó en Tegucigalpa un ejército de voluntarios, Morazán se enlistó como voluntario, al servicio de las autoridades de Tegucigalpa.Fue designado como capitán de una de las compañías. Así comenzó la vida militar de Morazán.</p>
+			</div>
+		</div>
+
+
+		<div class="clearfix"></div>
+		<div class="bulto">
+			
+		</div>
+	</div>
+		<script>
+			new WOW().init();
+			$(document).ready(function() {
+				$("body").css("display", "none");
+				$("body").fadeIn(2000);
+				
+				$("a.transicion").click(function(event){
+					event.preventDefault();
+					linkDestino = this.href;
+					$("body").fadeOut(1000, redireccionarPag);      
+				});
+					
+				function redireccionarPag() {
+					window.location = linkDestino;
+				}
+			});
+			$(".revealOnScroll:not(.animated)").each(function () {
+			  var $this     = $(this),
+				  offsetTop = $this.offset().top;
+
+			  if (scrolled + win_height_padded > offsetTop) {
+				if ($this.data('timeout')) {
+				  window.setTimeout(function(){
+					$this.addClass('animated ' + $this.data('animation'));
+				  }, parseInt($this.data('timeout'),10));
+				} else {
+				  $this.addClass('animated ' + $this.data('animation'));
+				}
+			  }
+			});
+			// Hidden...
+			$(".revealOnScroll.animated").each(function (index) {
+			   var $this     = $(this),
+				   offsetTop = $this.offset().top;
+			   if (scrolled + win_height_padded < offsetTop) {
+				 $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+			   }
+			});
+		</script>
+</body>
+</html>
